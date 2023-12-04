@@ -5,8 +5,7 @@
     return this.each(function() {
       $.fn.mauGallery.methods.createRowWrapper($(this));
       if (options.lightBox) {
-        $.fn.mauGallery.methods.createLightBox(
-          $(this),
+        $.fn.mauGallery.methods.createLightBox($(this),
           options.lightboxId,
           options.navigation
         );
@@ -20,11 +19,7 @@
           $.fn.mauGallery.methods.moveItemInRowWrapper($(this));
           $.fn.mauGallery.methods.wrapItemInColumn($(this), options.columns);
           var theTag = $(this).data("gallery-tag");
-          if (
-            options.showTags &&
-            theTag !== undefined &&
-            tagsCollection.indexOf(theTag) === -1
-          ) {
+          if (options.showTags && theTag !== undefined && tagsCollection.indexOf(theTag) === -1) {
             tagsCollection.push(theTag);
           }
         });
@@ -46,7 +41,7 @@
     lightboxId: null,
     showTags: true,
     tagsPosition: "bottom",
-    navigation: true
+    navigation: true,
   };
   $.fn.mauGallery.listeners = function(options) {
     $(".gallery-item").on("click", function() {
@@ -67,12 +62,7 @@
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
-      if (
-        !element
-          .children()
-          .first()
-          .hasClass("row")
-      ) {
+      if (!element.children() .first() .hasClass("row")) {
         element.append('<div class="gallery-items-row row"></div>');
       }
     },
@@ -150,7 +140,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = i-1;
         }
       });
       next =
@@ -189,7 +179,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i+1;
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
@@ -240,22 +230,16 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
       $(".gallery-item").each(function() {
-        $(this)
-          .parents(".item-column")
-          .hide();
+        $(this).parents(".item-column").hide();
         if (tag === "all") {
-          $(this)
-            .parents(".item-column")
-            .show(300);
+          $(this).parents(".item-column").show(300);
         } else if ($(this).data("gallery-tag") === tag) {
-          $(this)
-            .parents(".item-column")
-            .show(300);
+          $(this).parents(".item-column").show(300);
         }
       });
     }
