@@ -214,6 +214,9 @@ body {
 	right: 0;
 	z-index: -1;
 }
+.lightboxImage {
+    margin-left: 2.5%;
+}
 .form-container {
 	flex : 2;
 
