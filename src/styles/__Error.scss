@@ -1,0 +1,27 @@
+@import '__Variables'; 
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 550px; 
+  gap: 90px;
+
+  h1 {
+    font-size: 200px; 
+    color: $main-color; 
+    margin-bottom: 0;
+  }
+
+  p {
+    text-align: center;
+    font-weight: bold;
+    color: $main-color; 
+    font-size: 25px;
+  }
+
+  a {
+    color: $main-color; 
+  }
+}

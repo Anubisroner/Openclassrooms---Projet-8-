@@ -1,0 +1,22 @@
+.footer-container {
+    position: fixed;
+    text-align: center;
+    color: white;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    height: 100px;
+
+    .logo {
+        margin-top: 20px;
+        width: 90px;
+        margin-bottom: 10px;
+        filter: brightness(0) invert(1);
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
