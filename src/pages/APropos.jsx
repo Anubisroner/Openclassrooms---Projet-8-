@@ -1,9 +1,11 @@
-import { BannerAbout } from '../components/Banner';
+import { Banner } from '../components/Banner';
 
 function APropos() {
   return (
     <div className="App">
-      <BannerAbout />
+      <Banner
+        className="banner-about-container"
+      />
     </div>
   );
 }

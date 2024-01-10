@@ -1,17 +1,18 @@
-.footer-container {
-    position: fixed;
+footer {
+    position: absolute;
+    background-color: black;
     text-align: center;
     color: white;
-    background-color: black;
+    width: 100%;
+    max-width: none;
+    min-height: 100px;
     bottom: 0;
     left: 0;
-    width: 100%;
     padding: 20px 0;
-    height: 100px;
 
     .logo {
-        margin-top: 20px;
         width: 90px;
+        margin-top: 20px;
         margin-bottom: 10px;
         filter: brightness(0) invert(1);
     }
