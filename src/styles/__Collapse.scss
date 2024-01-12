@@ -1,0 +1,55 @@
+.collapse-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .collapse {
+        position: relative;
+        font-size: 18px;
+        width: 582px;
+        cursor: pointer;
+
+        .collapse-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px 10px;
+            background-color: $main-color;
+
+            img {
+                transition: transform 0.3s ease-in;
+            }
+
+            .img-rotate {
+                transform: rotate(180deg);
+            }
+        }
+
+        .collapse-title {
+            text-align: left;
+        }
+
+        .collapse-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: $main-background;
+            border-radius: 0 0 10px 10px;
+            padding: 30px 20px;
+            margin-top: -10px;
+            z-index: -1;
+            width: 100%;
+            gap: 2px;
+            transition:
+                height 0.2s ease-in-out, 
+                opacity 0.2s ease-in;
+
+            li {
+                list-style: none;
+            }
+        }
+
+    }
+}

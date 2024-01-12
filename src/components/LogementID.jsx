@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Json from '../data/logements.json';
+import Collapse from './Collapse';
+import Error from '../pages/Error';
 import '../styles/__Style.scss';
+
 
 function LogementID() {
     const [logement, setLogement] = useState(null);
@@ -32,14 +35,27 @@ function LogementID() {
                         <div className="container-bloc2">
                             <div className="logement-bloc2">
                                 <p className="logement-name">{logement.host.name}</p>
-                                <img src={logement.host.picture} alt={logement.host.name} className="logement-image-proprio"/>
+                                <img src={logement.host.picture} alt={logement.host.name} className="logement-image-proprio" />
                             </div>
                             <p className="logement-rating">{logement.rating} étoiles sur 5</p>
                         </div>
+
+                    </div>
+                    <div className="collapse-container">
+                        <Collapse
+                            titre="Description"
+                            content={logement.description}
+                        />
+                        <Collapse
+                            titre="Equipements"
+                            content={logement.equipments.map((e) => (
+                                <li>{e}</li>
+                            ))}
+                        />
                     </div>
                 </div>
             ) : (
-                <p>Logement introuvable</p>
+                <Error />
             )}
         </div>
     );
