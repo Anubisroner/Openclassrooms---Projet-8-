@@ -1,8 +1,8 @@
 __________________________________________________________________________________________________________________________________
-|                                                                                                                                |
-|                                    # Application accéssible depuis ce lien:                                                    |
-|                      # [openclassrooms-kasa-app](https://openclassrooms-kasa-app.netlify.app/)                                 |
-|                                                                                                                                |
+                                                                                                                                
+                                    # Application accéssible depuis ce lien:                                                    
+                      # [openclassrooms-kasa-app](https://openclassrooms-kasa-app.netlify.app/)                                 
+                                                                                                                                
 __________________________________________________________________________________________________________________________________
 
 ## Getting Started with Create React App
