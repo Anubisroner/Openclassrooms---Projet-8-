@@ -1,0 +1,16 @@
+.rating {
+    display: flex;
+    width: 150px;
+    margin-top: 6px;
+    gap: 2px;
+    
+    .star {
+        height: 30px;
+        width: 40px;
+    }
+
+    .star-inactive{
+        filter: contrast(0);
+        opacity: 0.3;
+    }
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Json from '../data/logements.json';
 import Collapse from './Collapse';
+import Rating from './Rating';
 import Error from '../pages/Error';
 import '../styles/__Style.scss';
 
@@ -9,11 +10,19 @@ import '../styles/__Style.scss';
 function LogementID() {
     const [logement, setLogement] = useState(null);
     const location = useLocation();
+    const [rating, setRating] = useState(0);
 
     useEffect(() => {
         const logement = Json.find((logement) => "/" + logement.id === location.pathname);
         setLogement(logement);
     }, []);
+
+    useEffect(() => {
+        if (logement) {
+            const note = Number(logement.rating);
+            setRating(note);
+        }
+    }, [logement]);
 
     return (
         <div className="logement-container">
@@ -37,7 +46,9 @@ function LogementID() {
                                 <p className="logement-name">{logement.host.name}</p>
                                 <img src={logement.host.picture} alt={logement.host.name} className="logement-image-proprio" />
                             </div>
-                            <p className="logement-rating">{logement.rating} étoiles sur 5</p>
+                            <div className="rating">
+                                <Rating rating={rating} />
+                            </div>
                         </div>
 
                     </div>
