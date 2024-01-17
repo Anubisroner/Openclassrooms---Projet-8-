@@ -1,0 +1,41 @@
+.carousel {
+    position: relative;
+    display: flex;
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+
+    .fleche {
+        position: absolute;
+        cursor: pointer;
+        top: 42%;
+        transition: transform 0.2s ease-in;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .fleche-gauche {
+        margin-left: 20px;
+    }
+
+    .fleche-droite {
+        right: 20px;
+        rotate: (180deg);
+    }
+
+    .carousel-img {
+        border-radius: 25px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.compteur {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 50%;
+    bottom: 10px;
+}

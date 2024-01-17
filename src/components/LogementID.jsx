@@ -4,6 +4,7 @@ import Json from '../data/logements.json';
 import Collapse from './Collapse';
 import Rating from './Rating';
 import Error from '../pages/Error';
+import Carousel from './Carousel';
 import '../styles/__Style.scss';
 
 
@@ -28,7 +29,7 @@ function LogementID() {
         <div className="logement-container">
             {logement ? (
                 <div className="logement-details">
-                    <img src={logement.pictures[0]} alt={logement.title} className="logement-image" />
+                    <Carousel logement={logement} />
 
                     <div className="bloc-container">
                         <div className="logement-bloc1">
@@ -59,8 +60,8 @@ function LogementID() {
                         />
                         <Collapse
                             titre="Equipements"
-                            content={logement.equipments.map((e) => (
-                                <li>{e}</li>
+                            content={logement.equipments.map((e, index) => (
+                                <li key={index}>{e}</li>
                             ))}
                         />
                     </div>
