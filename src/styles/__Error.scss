@@ -8,6 +8,10 @@
   height: 550px; 
   gap: 90px;
 
+  @media (max-width: 800px) {
+    margin-top: 50px;
+}
+
   h1 {
     font-size: 200px; 
     color: $main-color; 

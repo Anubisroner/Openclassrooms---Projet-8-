@@ -8,14 +8,34 @@
     margin-top: 50px;
     overflow: hidden;
 
+    @media (max-width: 800px) {
+        height: 130px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
     p {
         display: flex;
         justify-content: center;
         color: white;
         font-size: 48px;
         margin-top: 80px;
+
+        @media (max-width: 800px) {
+            font-size: 28px;
+            width: 50%;
+            margin-left: 5%;
+            margin-top: 9%;
+        }
     }
 }
+
+@media (max-width: 800px) {
+    .App {
+        padding: 0 30px;
+    }
+}
+
 
 .banner-about-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/banner2.jpg');
@@ -26,4 +46,10 @@
     border-radius: 25px;
     margin-top: 50px;
     overflow: hidden;
+
+    @media (max-width: 800px) {
+        height: 130px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
 }

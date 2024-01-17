@@ -6,8 +6,12 @@
     .collapse {
         position: relative;
         font-size: 18px;
-        width: 582px;
+        width: 47%;
         cursor: pointer;
+
+        @media (max-width: 800px) {
+            width: 100%;
+        }
 
         .collapse-header {
             display: flex;
@@ -43,7 +47,7 @@
             width: 100%;
             gap: 2px;
             transition:
-                height 0.2s ease-in-out, 
+                height 0.2s ease-in-out,
                 opacity 0.2s ease-in;
 
             li {

@@ -1,10 +1,24 @@
 .logement-container {
     color: $main-color;
+    margin-bottom: 54px;
+
+    @media (max-width: 800px) {
+        padding: 0 30px;
+    }
 
     .logement-details {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
+
+        @media (max-width: 800px) {
+            .collapse-container {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+                padding-bottom: 10px;
+            }
+        }
     }
 
     .logement-image {
@@ -16,7 +30,12 @@
 
     .bloc-container {
         display: flex;
-        margin-top: 20px; 
+        margin-top: 20px;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     .logement-bloc1 {
@@ -24,6 +43,11 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+        h1 {
+            font-weight: 500;
+            font-size: 36px;
+        }
 
         .logement-tags {
             list-style: none;
@@ -35,6 +59,16 @@
                 background-color: $main-color;
                 color: white;
                 border-radius: 10px;
+
+                @media (max-width: 800px) {
+                    padding: 5px 20px;
+                }
+            }
+
+            @media (max-width: 800px) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
             }
         }
     }
@@ -42,10 +76,18 @@
     .container-bloc2 {
         display: flex;
         flex-direction: column;
+        gap: 20px;
+
+        @media (max-width: 800px) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+
 
         .logement-bloc2 {
             display: flex;
-            align-items: center; 
+            align-items: center;
             padding-left: 15px;
 
             .logement-name {
@@ -59,4 +101,5 @@
             }
         }
     }
+
 }

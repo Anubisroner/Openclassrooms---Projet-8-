@@ -4,6 +4,10 @@
     align-items: center;
     justify-content: center;
     color: $main-color;
+
+    @media (max-width: 800px) {
+      margin-bottom: 10px;
+  }
   
     .collapse-container {
       display: flex;
@@ -12,6 +16,11 @@
       .collapse {
         margin-top: 10px;
         width: 900px;
+
+        @media (max-width: 800px) {
+          width: 100%;
+        }
+
       }
     }
   }
