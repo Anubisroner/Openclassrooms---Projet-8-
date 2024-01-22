@@ -9,7 +9,7 @@ function Rating({ rating }) {
       alt={index + 1 <= rating ? 'etoile active' : 'etoile inactive'}
     />
   ));
-
+  
   return <div className="rating">{etoiles}</div>;
 }
 
