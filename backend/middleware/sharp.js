@@ -20,7 +20,8 @@ module.exports = (req, res, next) => {
             const cheminImageResize = path.join(dossierImage, nomImage + "-resized" + extensionImage);
 
             console.log(imageOriginale, cheminImageResize);
-
+            
+            sharp.cache(false)
             sharp(imageOriginale)
                 .resize(width, height, { fit: "inside" })
                 .jpeg({ quality: 80 })

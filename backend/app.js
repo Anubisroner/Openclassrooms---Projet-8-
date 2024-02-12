@@ -10,11 +10,7 @@ const app = express();
 app.use(express.json());
 
 // connection a la BDD mangoDB
-mongoose.connect(process.env.MONGODB_URL,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
+mongoose.connect(process.env.MONGODB_URL)
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
