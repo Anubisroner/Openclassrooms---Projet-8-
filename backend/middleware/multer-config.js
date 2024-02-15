@@ -1,23 +1,34 @@
-const multer = require("multer");
+const multer = require('multer');
 
 const MIME_TYPES = {
-    "image/jpg": "jpg",
-    "image/jpeg": "jpg",
-    "image/png": "png"
-}
+  'image/jpg': 'jpg',
+  'image/jpeg': 'jpg',
+  'image/png': 'png'
+};
 
 const storage = multer.diskStorage({
-    destination: (req, file, callback) => {
-        callback(null, "images")
-    },
-    filename: (req, file, callback) => {
-        const name = file.originalname.split(" ").join("_");
-        const extension = MIME_TYPES[file.mimetype];
-        if (!extension) {
-            return res.status(500).json({ message: "Le format du fichier sélectionné n'est pas valide !" })
-        }
-        callback(null, name + Date.now() + "." + extension)
+  destination: (req, file, callback) => {
+    callback(null, 'images');
+  },
+  filename: (req, file, callback) => {
+    const name = file.originalname.split(' ').join('_');
+    const extension = MIME_TYPES[file.mimetype];
+    if (!extension) {
+      console.error('Format de fichier non pris en charge');
+      return callback(new Error('Format de fichier non pris en charge'), null);
     }
+    const path = name + Date.now() + '.' + extension;
+    callback(null, path);
+  }
 });
 
-module.exports = multer({ storage }).single("image");
+const upload = multer({ storage: storage }).single('image');
+
+module.exports = (req, res, next) => {
+  upload(req, res, (err) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+    next();
+  });
+};
