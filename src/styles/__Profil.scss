@@ -1,0 +1,22 @@
+@import '__Variables';
+
+.profil-container {
+    display: flex;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 0 20px 20px 0 ;
+
+    img {
+        width: 100px; 
+        margin-right: 20px; 
+        border: solid 5px black;
+    }
+
+    p {
+        font-family: "Press Start 2P", cursive; 
+        font-size: 20px; 
+        overflow: hidden; 
+        white-space: nowrap; 
+        animation: typing 3s steps(40, end); 
+    }
+}

@@ -1,0 +1,40 @@
+[
+    {
+        "titre": "Sophie Bluel",
+        "description": "Créez une page web dynamique avec Javascript.",
+        "problematique": "",
+        "competence": "",
+        "images": "",
+        "techno": [
+            "Javascript"
+        ],
+        "lien": "https://github.com/Anubisroner/Openclassrooms---Projet-3-"
+    },
+    {
+        "titre": "Kasa",
+        "description": "Créez une application web de location immobilière avec React",
+        "problematique": "",
+        "competence": "",
+        "images": "",
+        "techno": [
+            "React",
+            "Sass"
+        ],
+        "lien": "https://github.com/Anubisroner/Openclassrooms---Projet-6-"
+    },
+    {
+        "titre": "Mon vieux grimoire",
+        "description": "Développez le back-end d'un site de notation de livres",
+        "problematique": "",
+        "competence": "",
+        "images": "",
+        "techno": [
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "React",
+            "API"
+        ],
+        "lien": "https://github.com/Anubisroner/Openclassrooms---Projet-7-"
+    }
+]

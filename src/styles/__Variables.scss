@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'MorrisRoman-Black'; 
+    src: url('../font/MorrisRoman-Black.ttf') format('truetype');
+  }
+  
+  $font-morris-roman-black: 'MorrisRoman-Black', sans-serif;
+
+  @keyframes WhitePulse {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7); /* Couleur initiale */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3); /* Couleur lumineuse */
+    }
+    100% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7); /* Retour à la couleur initiale */
+    }
+  }
+
+  @keyframes BluePulse {
+    0% {
+        box-shadow: 0 0 10px 0 #4f71a2; /* Couleur initiale */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3); /* Couleur lumineuse */
+    }
+    100% {
+        box-shadow: 0 0 10px 0 #4f71a2; /* Retour à la couleur initiale */
+    }
+  }
+
+  @keyframes typing {
+    from { width: 0; } /* Commence avec une largeur de 0 */
+    to { width: 100%; } /* Augmente progressivement la largeur jusqu'à 100% */
+}
