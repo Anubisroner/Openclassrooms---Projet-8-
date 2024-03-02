@@ -1,0 +1,16 @@
+.contact-logo-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+    img {
+        width: 100px;
+        cursor: pointer;
+
+        &:hover {
+            animation: shake 2s;
+            animation-iteration-count: infinite;
+        }
+    }
+}

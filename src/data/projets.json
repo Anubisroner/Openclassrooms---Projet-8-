@@ -2,9 +2,14 @@
     {
         "titre": "Sophie Bluel",
         "description": "Créez une page web dynamique avec Javascript.",
-        "problematique": "",
-        "competence": "",
-        "images": "",
+        "problematique": "Apprendre Javascript.",
+        "competence": "L'apprentissage de Javascript.",
+        "images": [
+            "/assets/sophie-bluel/sb1.jpg",
+            "/assets/sophie-bluel/sb2.jpg",
+            "/assets/sophie-bluel/sb3.jpg",
+            "/assets/sophie-bluel/sb4.jpg"
+        ],
         "techno": [
             "Javascript"
         ],
@@ -13,11 +18,15 @@
     {
         "titre": "Kasa",
         "description": "Créez une application web de location immobilière avec React",
-        "problematique": "",
-        "competence": "",
-        "images": "",
+        "problematique": "Apprendre React",
+        "competence": "React",
+        "images": [
+            "/assets/kasa/kasa1.jpg",
+            "/assets/kasa/kasa2.jpg",
+            "/assets/kasa/kasa3.jpg"
+        ],
         "techno": [
-            "React",
+            "React, ",
             "Sass"
         ],
         "lien": "https://github.com/Anubisroner/Openclassrooms---Projet-6-"
@@ -27,12 +36,18 @@
         "description": "Développez le back-end d'un site de notation de livres",
         "problematique": "",
         "competence": "",
-        "images": "",
+        "images": [
+            "/assets/vieux-grimoire/vg1.jpg",
+            "/assets/vieux-grimoire/vg2.jpg",
+            "/assets/vieux-grimoire/vg3.jpg",
+            "/assets/vieux-grimoire/vg4.jpg",
+            "/assets/vieux-grimoire/vg5.jpg"
+        ],
         "techno": [
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "React",
+            "Node.js, ",
+            "Express, ",
+            "MongoDB, ",
+            "React, ",
             "API"
         ],
         "lien": "https://github.com/Anubisroner/Openclassrooms---Projet-7-"

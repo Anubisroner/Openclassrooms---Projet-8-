@@ -1,22 +1,31 @@
-@import '__Variables';
-
 .profil-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    border: solid 2px black;
-    border-radius: 0 20px 20px 0 ;
+    border: solid 2px white;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
+    animation: WhitePulse 2s infinite;
+    border-radius: 20px;
+    background: rgba(2, 0, 36, 0.5);
+    background: linear-gradient(90deg, rgb(2, 0, 36, 0.5) 0%, rgba(181, 181, 214, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
+    backdrop-filter: blur(3px);
+    width: 750px;
+    height: 280px;
+    padding: 10px;
 
     img {
-        width: 100px; 
-        margin-right: 20px; 
-        border: solid 5px black;
+        width: 150px;
+        border: solid 3px black;
+        left: 10px;
+        border-radius: 50%;
     }
 
-    p {
-        font-family: "Press Start 2P", cursive; 
-        font-size: 20px; 
-        overflow: hidden; 
-        white-space: nowrap; 
-        animation: typing 3s steps(40, end); 
+    .profil-texte {
+        font-family: "Press Start 2P", cursive;
+        color: white;
+        font-size: 18px;
+        padding: 15px;
+        margin-right: auto;
+        margin-bottom: auto;
     }
 }
