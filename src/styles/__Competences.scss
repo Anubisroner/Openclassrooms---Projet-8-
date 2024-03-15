@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap; 
     gap: 10px;
+    animation: apparitionTexte 1s ease;
 
     section {
         text-align: center;
@@ -12,6 +13,11 @@
             width: 60px; 
             height: auto; 
             border-radius: 20px;
+
+            &:hover {
+                transform: scale(1.2);
+                filter: drop-shadow(16px 16px 20px) invert(100%);
+            }
         }
 
         p {

@@ -1,3 +1,5 @@
+@import '__Variables.scss';
+
 header {
     position: fixed;
     display: flex;
@@ -5,25 +7,32 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgba(5, 5, 0, 0.700);
-    box-shadow: 0 0 10px 2px #4f71a2;
-    animation: BluePulse 1.5s infinite;
+    animation: BluePulse 5s infinite;
     border: 5mm ridge #4f71a2;
-    width: 20%;
-    height: 50vh;
+    border-radius: 10px;
+    width: 25%;
+    height: 60vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+    @media (max-width: 768px) {
+        margin-top: 30px;
+        width: 50%;
+        left: 48%;
+    }
+
     p {
         font-family: $font-morris-roman-black;
-        color: white;
-        font-size: 35px;
+        color: #FCDC12;
+        font-size: 40px;
         margin-bottom: 10px;
+        margin-top: -50px;
     }
 
     img {
         width: 90%;
-        filter: brightness(0) invert(1);
+        margin-bottom: 50px;
     }
 
     nav {
@@ -35,6 +44,11 @@ header {
             .nav-links {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+
+                @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+                    margin-bottom: -40px;
+                }
 
                 .button {
                     position: relative;
@@ -42,11 +56,12 @@ header {
                     color: black;
                     font-family: $font-morris-roman-black;
                     font-weight: bold;
-                    font-size: 25px;
+                    font-size: 30px;
                     text-align: center;
                     text-decoration: none;
-                    background-color: #7189ac; 
-                    padding: 15px 30px;
+                    background-color: #7189ac;
+                    width: 70%;
+                    padding: 15px;
                     margin: 30px;
                     cursor: pointer;
 
@@ -61,6 +76,10 @@ header {
                     -webkit-border-radius: 5px;
                     -moz-border-radius: 5px;
                     border-radius: 5px;
+
+                    @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+                        margin: 10px 0 20px 0;
+                    }
                 }
 
                 .button:hover {

@@ -5,9 +5,6 @@ import LogoReact from '../assets/techno/logo_react.jpg';
 import LogoMangodb from '../assets/techno/logo_mangodb.jpg';
 import LogoJavascript from '../assets/techno/logo_javascript.jpg';
 
-import '../styles/__Styles.scss';
-
-
 const Competences = () => {
     return (
         <div className="competences-container">

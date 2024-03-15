@@ -1,16 +1,54 @@
-.contact-logo-container {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+.panneau-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+    margin-left: 94vw;
+    transform: translateY(60%);
+    height: 100%;
 
-    img {
-        width: 100px;
-        cursor: pointer;
+    @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+        gap: 100px;
+        transform: translateY(0);
+        margin-left: 90vw;
+    }
 
-        &:hover {
-            animation: shake 2s;
+    @media (max-width: 768px) {
+        position: fixed;
+        margin: 11px 0 0 0;
+        top: 1030px;
+        gap: 150px;
+        left: 200px;
+        transform: none;
+        transform: none;
+        flex-direction: row;
+    }
+
+    .contact-logo-container {
+        display: flex;
+
+        img {
+            width: 100px;
+            animation: shake 7s;
             animation-iteration-count: infinite;
+            cursor: pointer;
+
+            &:hover {
+                animation: none;
+            }
+
+        }
+
+        .livre-logo {
+            position: fixed;
+            animation: none;
+            
+            &:hover {
+                position: fixed;
+                background-image: url(../assets/livre_ouvert.png);
+                animation: apparitionTexte 0.7s ease;
+                margin-top: -15px;
+
+            }
         }
     }
 }

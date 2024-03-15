@@ -4,60 +4,136 @@
     align-items: center;
     justify-content: center;
     width: 500px;
+    
+    @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+        height: 500px;
+    }
 
     .logo-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 35px;
+        margin-left: 110px;
+
+        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+            margin-bottom: 0;
+            gap: 10px;
+        }
+    
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .mail-logo {
+            transition: all 0.8s;
+        }
+
+        .mail-logo:hover {
+            transform: scale(1.1) rotate(360deg);
+        }
+
+        .tel-logo:hover {
+            animation: shake 0.3s;
+            animation-iteration-count: infinite;
+            background-image: url(../assets/logo_tel_sonne.png);
+        }
+
     }
 
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+            height: 400px;
+        }
+    
     }
 
     label {
         position: relative;
         align-self: flex-start;
-        font-size: 20px;
+        color: white;
+        font-size: 23px;
         font-weight: bold;
         margin-top: 20px;
         margin-bottom: 5px;
+
+        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+            font-size: 18px;
+        }
 
         &::after {
             position: absolute;
             content: "";
             bottom: 0;
             left: 0;
-            background-color: black;
+            background-color: white;
             width: 100%;
             height: 1px;
         }
     }
 
-    input, textarea {
+    input,
+    textarea {
         border-radius: 5px;
         width: 300px;
         height: 30px;
         outline: none;
         border: none;
+        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+            height: 40px;
+        }
     }
 
     textarea {
         height: 150px;
+        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
+            height: 160px;
+        }
+
     }
 
     input[type="submit"] {
         margin-top: 20px;
+        font-size: 16px;
         font-weight: bold;
     }
 
     input:focus,
     textarea:focus {
-        box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+        box-shadow: 0 0 10px 5px rgb(255, 255, 255);
         transition: transform 0.5s;
         transform: scale(1.1);
-        }
+    }
+
+    .confirmation {
+        color: rgb(92, 175, 92);
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+    
+    .error {
+        color: rgb(172, 33, 33);
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
 }

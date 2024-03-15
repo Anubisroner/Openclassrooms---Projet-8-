@@ -8,7 +8,7 @@ Je suis Farid Machrouh, un passionné de jeux vidéo et d'informatique.
 Ancien agent de sécurité, j'ai décidé de concrétiser ma passion pour le développement web.
 Après avoir longtemps envisagé cette transition, j'ai finalement sauté le pas en suivant une formation chez OpenClassrooms.
 À travers mes projets, je mets en pratique mes compétences acquises et je suis toujours avide d'apprendre et de relever de nouveaux défis dans le monde du développement web.`;
-    const speed = 50; 
+    const speed = 15; 
 
     useEffect(() => {
         let i = 0;

@@ -14,7 +14,7 @@ function Header({ openModal }) {
                         <button className="button" onClick={() => openModal("", <Profil />, "profilModal")}>
                             Profil
                         </button>
-                        <button className="button" onClick={() => openModal("Compétences", <Competences />)}>
+                        <button className="button" onClick={() => openModal("Compétences", <Competences />, "competencesModal")}>
                             Compétences
                         </button>
                         <button className="button" onClick={() => openModal("", <Quetes />, "quetesModal")}>

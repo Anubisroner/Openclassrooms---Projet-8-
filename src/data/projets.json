@@ -1,9 +1,9 @@
 [
     {
         "titre": "Sophie Bluel",
-        "description": "Créez une page web dynamique avec Javascript.",
-        "problematique": "Apprendre Javascript.",
-        "competence": "L'apprentissage de Javascript.",
+        "description": "Projet 3 OpenClassRooms - Créez une page web dynamique avec Javascript.",
+        "problematique": "Apprendre JavaScript et comprendre les concepts de base, maîtriser les structures de contrôle et les fonctions, ainsi que la manipulation du DOM.",
+        "competence": "Concevoir des solutions dynamiques en manipulant les structures de données, en implémentant des logiques de contrôle, et en interagissant avec le DOM pour une meilleure expérience utilisateur.",
         "images": [
             "/assets/sophie-bluel/sb1.jpg",
             "/assets/sophie-bluel/sb2.jpg",
@@ -17,9 +17,9 @@
     },
     {
         "titre": "Kasa",
-        "description": "Créez une application web de location immobilière avec React",
-        "problematique": "Apprendre React",
-        "competence": "React",
+        "description": "Projet 7 OpenClassRooms - Créez une application web de location immobilière avec React",
+        "problematique": "Apprentissage de React avec la compréhension des composants, leur cycle de vie et la gestion d'état pour créer des applications dynamiques et performantes.",
+        "competence": "Créer des applications interactives et évolutives en concevant des modules, en gérant les états et en optimisant les performances.",
         "images": [
             "/assets/kasa/kasa1.jpg",
             "/assets/kasa/kasa2.jpg",
@@ -33,9 +33,9 @@
     },
     {
         "titre": "Mon vieux grimoire",
-        "description": "Développez le back-end d'un site de notation de livres",
-        "problematique": "",
-        "competence": "",
+        "description": "Projet 8 OpenClassRooms - Développez le back-end d'un site de notation de livres",
+        "problematique": "La mise en place des routes, la gestion des requêtes et des réponses, ainsi que la sécurité et l'optimisation des performances de l'API.",
+        "competence": "Concevoir et à implémenter une API, gérer efficacement les requêtes HTTP, sécuriser les données et à optimiser les performances des applications basées sur des API.",
         "images": [
             "/assets/vieux-grimoire/vg1.jpg",
             "/assets/vieux-grimoire/vg2.jpg",
