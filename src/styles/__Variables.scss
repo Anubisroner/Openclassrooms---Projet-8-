@@ -102,11 +102,15 @@ $font-morris-roman-black: 'MorrisRoman-Black', sans-serif;
     0% {
         opacity: 1;
         visibility: visible;
-        // transform: translateY(0%);
     }
     100% {
         opacity: 0;
         visibility: hidden;
-        // transform: translateY(100%);
     }
 }
+
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+  }

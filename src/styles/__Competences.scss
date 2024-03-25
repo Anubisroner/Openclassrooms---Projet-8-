@@ -1,17 +1,36 @@
 .competences-container {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
     animation: apparitionTexte 1s ease;
+    min-width: 500px;
+    width: 20vw;
+
+    overflow: auto;
+    //Masquer la barre de scroll  
+    &::-webkit-scrollbar {
+        display: none; // Pour les navigateurs basés sur WebKit (comme Chrome et Safari)
+    }
+
+    -ms-overflow-style: none; // Pour Internet Explorer et Edge
+    scrollbar-width: none; // Pour Firefox
+
+    @media (max-width: 768px) {
+        display: grid;
+        //flex-wrap: inherit;
+        grid-template-columns: repeat(3, 1fr);
+        min-width: 300px;
+        width: 65vw;
+    }
 
     section {
         text-align: center;
-        flex-basis: calc(33.33% - 10px); 
-        
+        flex-basis: calc(33.33% - 10px);
+
         img {
             padding: 10px;
-            width: 60px; 
-            height: auto; 
+            width: 60px;
+            height: auto;
             border-radius: 20px;
 
             &:hover {
@@ -22,7 +41,7 @@
 
         p {
             color: white;
-            font-family: "Press Start 2P", cursive; 
+            font-family: "Press Start 2P", cursive;
             font-weight: bold;
         }
     }

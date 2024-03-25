@@ -4,9 +4,11 @@
     align-items: center;
     justify-content: center;
     width: 500px;
-    
-    @media screen and (orientation: landscape) and (max-device-width: 1210px) {
-        height: 500px;
+
+    @media (max-width: 768px) and (max-height: 860px) {
+        max-width: 270px;
+        min-width: 65vw;
+        max-height: 550px;
     }
 
     .logo-container {
@@ -14,14 +16,18 @@
         justify-content: flex-start;
         margin-bottom: 20px;
         flex-wrap: wrap;
-        gap: 35px;
+        gap: 30px;
         margin-left: 110px;
 
-        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
-            margin-bottom: 0;
-            gap: 10px;
+        @media (max-width: 768px) and (min-width: 425px) and (max-height: 860px) {
+            margin-left: 10%;
         }
-    
+
+        @media (max-width: 425px) and (max-height: 860px) {
+            margin: 0;
+            gap: 20px;
+        }
+
 
         .contact-info {
             display: flex;
@@ -60,10 +66,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
-            height: 400px;
-        }
-    
     }
 
     label {
@@ -75,9 +77,10 @@
         margin-top: 20px;
         margin-bottom: 5px;
 
-        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
-            font-size: 18px;
+        @media (max-width: 425px) and (max-height: 860px) {
+            margin-top: 10px;
         }
+
 
         &::after {
             position: absolute;
@@ -97,16 +100,11 @@
         height: 30px;
         outline: none;
         border: none;
-        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
-            height: 40px;
-        }
+
     }
 
     textarea {
         height: 150px;
-        @media screen and (orientation: landscape) and (max-device-width: 1210px) {
-            height: 160px;
-        }
 
     }
 
@@ -129,7 +127,7 @@
         font-weight: bold;
         margin-top: 50px;
     }
-    
+
     .error {
         color: rgb(172, 33, 33);
         font-size: 25px;

@@ -2,10 +2,10 @@ import AvatarImage from '../assets/avatar.png';
 
 const Avatar = () => {
     return (
-        <div className="avatar-container">
-        <img src={AvatarImage} alt="Avatar" className="avatar" />
-    </div>
-);
+        <div class="avatar-container">
+            <img src={AvatarImage} alt="Avatar" class="avatar" />
+        </div>
+    );
 }
 
 export default Avatar;

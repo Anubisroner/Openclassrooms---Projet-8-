@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFileInvoice } from '@fortawesome/free-solid-svg-icons';
-import LinkedinLogo from '../assets/logo-linkedin.png';
 
 
 const Credits = () => {

@@ -47,13 +47,6 @@
     margin: 5px;
     cursor: pointer;
 
-    @media (max-width: 1100px){
-      right: 170px;
-    }
-
-    @media (max-width: 768px){
-      right: 5px;
-    }
   }
 }
 
@@ -66,7 +59,7 @@
   background-color: rgba(0, 0, 0, 0.80);
 }
 
-#profilModal {
+#profil-modal {
   background: transparent;
   top: auto;
   left: 50%;
@@ -76,6 +69,11 @@
   border: none;
   box-shadow: none;
   animation: apparitionTexte 1s ease;
+
+  @media (max-width: 768px) and (max-height: 860px) {
+    bottom: 50px;
+    max-height: 90vh;
+  }
 
   .separateur {
     display: none;
@@ -87,32 +85,28 @@
 
   .closeButton {
     z-index: 1;
-    top: 28px;
+    top: 38px;
     right: 6px;
   }
 }
 
-#competencesModal {
-  @media (max-width: 768px) {
-    width: 60%;
-    height: 30%;
+#competences-modal {
+
+  .closeButton {
+    top: -2px;
   }
 }
 
-#quetesModal {
+#quetes-modal {
   background: transparent;
   border: none;
   box-shadow: none;
   animation: apparitionTexte 1s ease;
 
-
-  @media (max-width: 768px) {
-
-    .modal-content {
-      width: 700px;
-      height: 200%;
-    }
+  @media (max-width: 425px) and (max-height: 860px) {
+    height: 115%;
   }
+
 
   .separateur {
     display: none;
@@ -122,16 +116,47 @@
     top: 65px;
     margin-right: 20px;
 
-    @media (max-width: 768px) {
-      top: 250px;
+    @media (max-width: 990px) {
+      position: relative;
+      top: 26vh;
+      left: 47vw;
     }
 
-    @media screen and (orientation: landscape) and (max-device-width: 1210px) {
-      top: 60px;
-    } 
+    @media (max-width: 990px) and (max-height: 860px) {
+      position: relative;
+      top: 29vh;
+      left: 47vw;
+    }
+
+    @media (max-width: 425px) and (max-height: 860px) {
+      position: relative;
+      top: 34vh;
+    }
   }
 
   h1 {
     border: none;
+  }
+}
+
+#contact-modal {
+  max-height: 90vh;
+  overflow: auto;
+
+  //Masquer la barre de scroll  
+  &::-webkit-scrollbar {
+    display: none; // Pour les navigateurs basés sur WebKit (comme Chrome et Safari)
+  }
+  -ms-overflow-style: none; // Pour Internet Explorer et Edge
+  scrollbar-width: none; // Pour Firefox
+
+  .closeButton {
+    top: -2px;
+  }
+}
+
+#credit-modal {
+  .closeButton {
+    top: -2px;
   }
 }

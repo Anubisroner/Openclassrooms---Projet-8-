@@ -32,10 +32,10 @@ function Accueil() {
         <div className="accueil-container">
           <h1>PERSONNAGE</h1>
           <img src={Separateur} alt="Separateur" className="separateur" />
-          <p className="heros" onClick={handleClick}>Farid Machrouh</p>
-          <p>_________</p>
-          <p>_________</p>
-          <p>_________</p>
+          <p className="heros" onClick={handleClick}><span>→ </span>Farid Machrouh<span> ←</span></p>
+          <p>____________</p>
+          <p>____________</p>
+          <p>____________</p>
         </div>
         {showLoading && (
           <div className="chargement">
