@@ -100,12 +100,12 @@
         height: 30px;
         outline: none;
         border: none;
-
+        padding: 5px;
     }
 
     textarea {
         height: 150px;
-
+        resize: none;
     }
 
     input[type="submit"] {
