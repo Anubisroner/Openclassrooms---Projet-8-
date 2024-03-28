@@ -70,10 +70,10 @@
   box-shadow: none;
   animation: apparitionTexte 1s ease;
 
-  @media (max-width: 768px) and (max-height: 860px) {
+  /*@media (max-width: 768px) and (max-height: 860px) {
     bottom: 50px;
     max-height: 90vh;
-  }
+  }*/
 
   .separateur {
     display: none;
@@ -103,9 +103,9 @@
   box-shadow: none;
   animation: apparitionTexte 1s ease;
 
-  @media (max-width: 425px) and (max-height: 860px) {
+  /*@media (max-width: 425px) and (max-height: 860px) {
     height: 115%;
-  }
+  }*/
 
   .separateur {
     display: none;
@@ -117,11 +117,12 @@
 
     @media (max-width: 990px) {
       position: relative;
-      top: 26vh;
-      left: 47vw;
+      top: -15px;
+      left: 120px;
+      z-index: 1;
     }
 
-    @media (max-width: 990px) and (max-height: 860px) {
+    /*@media (max-width: 990px) and (max-height: 860px) {
       position: relative;
       top: 29vh;
       left: 47vw;
@@ -130,7 +131,7 @@
     @media (max-width: 425px) and (max-height: 860px) {
       position: relative;
       top: 34vh;
-    }
+    }*/
   }
 
   h1 {
@@ -139,7 +140,6 @@
 }
 
 #contact-modal {
-  max-height: 90vh;
   overflow: auto;
 
   //Masquer la barre de scroll  

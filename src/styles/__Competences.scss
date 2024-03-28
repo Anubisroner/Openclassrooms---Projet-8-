@@ -3,8 +3,8 @@
     flex-wrap: wrap;
     justify-content: center;
     animation: apparitionTexte 1s ease;
-    min-width: 500px;
-    width: 20vw;
+    //min-width: 500px;
+    width: clamp(100%, 100% , 80vw );
 
     overflow: auto;
     //Masquer la barre de scroll  
@@ -19,8 +19,6 @@
         display: grid;
         //flex-wrap: inherit;
         grid-template-columns: repeat(3, 1fr);
-        min-width: 300px;
-        width: 65vw;
     }
 
     section {
