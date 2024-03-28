@@ -32,38 +32,9 @@ const Quetes = () => {
         audio.play();
     };
 
-    // Ajouter un écouteur d'événements pour le clic sur tout le document
-    document.addEventListener('click', toggleZoom);
-
     function toggleZoom(event) {
         const clickedElement = event.target;
-
-        // Vérifier si l'élément cliqué est une image zoomable
-        if (clickedElement.classList.contains('animate')) {
-            // Récupérer toutes les images zoomables
-            const images = document.querySelectorAll('.animate');
-
-            // Si l'image cliquée est déjà zoomée, la désactiver
-            if (clickedElement.classList.contains('zoomed')) {
-                clickedElement.classList.remove('zoomed');
-            } else {
-                // Sinon, désactiver toutes les autres images zoomées
-                images.forEach(image => {
-                    if (image !== clickedElement && image.classList.contains('zoomed')) {
-                        image.classList.remove('zoomed');
-                    }
-                });
-
-                // Activer l'image cliquée
-                clickedElement.classList.add('zoomed');
-            }
-        } else {
-            // Si l'élément cliqué n'est pas une image zoomable, désactiver toutes les images zoomées
-            const zoomedImages = document.querySelectorAll('.zoomable-image.zoomed');
-            zoomedImages.forEach(image => {
-                image.classList.remove('.zoomable-image');
-            });
-        }
+        clickedElement.classList.toggle('zoomed');
     }
 
     return (
@@ -102,8 +73,9 @@ const Quetes = () => {
                     <p className={animation ? "animate" : ""}> <span>Lien du projet: </span><a href={projets[modalOpen].lien} rel='noreferrer' target="_blank">ICI</a></p>
                     <p className={animation ? "animate" : ""}> <span>Screenshots:</span></p>
                     <div className="quetes-images">
-                        {projets[modalOpen].images && projets[modalOpen].images.map && projets[modalOpen].images.map((lien, index) => (
-                            <img key={index} src={lien} alt={projets[modalOpen].titre} tabIndex={0} onClick={toggleZoom} className={animation ? "animate " : "animate zoomable-image"} />
+                        {console.log(projets[modalOpen])}
+                        {projets[modalOpen].images.map((lien, index) => (
+                            <img key={index} src={lien} alt={projets[modalOpen].titre} tabIndex={0} onClick={toggleZoom} className={animation ? "animate " : ""} />
                         ))}
                     </div>
                     <p className="quest-complete">Quête validée</p>

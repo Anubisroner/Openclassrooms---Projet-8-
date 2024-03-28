@@ -28,10 +28,6 @@ function App() {
 
   return (
     <Router>
-      <Helmet>
-        <title>Portfolio: Machrouh Farid</title>
-        <meta name="description" content="Portfolio de Machrouh Farid, dev web junior." />
-      </Helmet>
       <div className="App">
         <Routes>
           <Route path="/" element={<Accueil />} />
