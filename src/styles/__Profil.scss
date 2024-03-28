@@ -60,20 +60,22 @@
         border: solid 3px black;
         left: 10px;
         border-radius: 50%;
-        //margin-bottom: auto;
-        /*@media (max-width: 425px) and (max-height: 860px) {
-            margin-top: 10px;
-        }*/
+        //align-self: center;
+        //@media (max-width: 768px){
+            //margin: 20px;
+        //}
     }
 
     .profil-texte {
         color: white;
         font-size: clamp(19px, 2vh, 2vh);
+        align-self: flex-start;
+
+        padding: 15px;
+        margin-right: auto;
         /*@media (max-width: 768px){
             font-size: clamp(10px, 1.9vh, 1.9vh);
         }*/
-        padding-left: 15px;
-        margin-right: auto;
         //margin-bottom: auto;
 
     }
