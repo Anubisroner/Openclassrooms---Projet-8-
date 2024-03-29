@@ -21,44 +21,19 @@ header {
         font-family: $font-morris-roman-black;
         color: #FCDC12;
         font-size: clamp(2.5vh, 2vw, 2vw);
-        margin-bottom: 10px;    
+        margin-bottom: 10px;
     }
 
     img {
         width: 80%;
-        margin-bottom: clamp( 10px, 2vh , 2vh) ;
-
-
-        /*@media (min-width: 768px) and (max-width: 1920px) and (max-height: 860px) {
-            margin-bottom: 10px;
-        }
-
-        @media (max-width: 768px) and (max-height: 860px) {
-            margin-bottom: 10px;
-            
-        }*/
+        margin-bottom: clamp(10px, 2vh, 2vh);
     }
 
     nav {
-
-        /*@media (max-width: 768px) and (max-height: 860px) {
-            height: 100%;
-            max-height: 310px;
-        }*/
-        
         .header-container {
             align-items: center;
             height: clamp(100%, 10vh, 10vh);
             text-align: center;
-            //min-height: 200px;
-
-            /*@media (min-width: 768px) and (max-width: 1920px) and (max-height: 860px) {
-                height: 50vh;
-                min-height: 400px;
-                min-width: 100%;
-                width: 30%;
-                align-items: center;
-            }*/
 
             .nav-links {
                 display: flex;
@@ -82,18 +57,6 @@ header {
                     padding: 15px;
                     margin: 0.5vh;
                     cursor: pointer;
-
-                    /*@media (min-width: 768px) and (max-width: 1920px) and (max-height: 860px) {
-                        margin: 10px;
-                    }
-
-                    @media (max-width: 768px) and (max-height: 860px) {
-                        margin: 10px;
-                    }
-
-                    @media (max-width: 768px) and (max-height: 860px) {
-                        font-size: 20px;
-                    }*/
 
                     &:hover {
                         background-color: #4f71a2;

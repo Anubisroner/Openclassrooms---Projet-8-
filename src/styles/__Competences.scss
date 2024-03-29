@@ -3,11 +3,9 @@
     flex-wrap: wrap;
     justify-content: center;
     animation: apparitionTexte 1s ease;
-    //min-width: 500px;
     width: clamp(100%, 100% , 80vw );
 
     overflow: auto;
-    //Masquer la barre de scroll  
     &::-webkit-scrollbar {
         display: none; // Pour les navigateurs basés sur WebKit (comme Chrome et Safari)
     }
@@ -17,7 +15,6 @@
 
     @media (max-width: 768px) {
         display: grid;
-        //flex-wrap: inherit;
         grid-template-columns: repeat(3, 1fr);
     }
 
